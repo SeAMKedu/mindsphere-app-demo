@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block title %}{% endblock %}
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div id="_mdspcontent">
+        <!-- Navigation Bar -->
+        <div class="w3-bar w3-black">
+            <a class="w3-bar-item w3-button" href="/pressure" >Pressure</a>
+            <a class="w3-bar-item w3-button" href="/temperature" >Temperature</a>
+        </div>
+        <!-- Page Content -->
+        {% block content %}{% endblock %}
+        <!-- MindSphere OS Bar -->
+        <script type="text/javascript" src="https://static.eu1.mindsphere.io/osbar/v4/js/main.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='os-bar.js') }}"></script>
+    </div>
+</body>
+</html>

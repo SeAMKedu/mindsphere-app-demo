@@ -1,0 +1,14 @@
+{
+    "displayName": "Demo App",
+    "appVersion": "1.0.0",
+    "appCopyright": "© Seinajoki UAS 2019",
+    "links": {
+        "default": [
+            {
+                "type": "WWW",
+                "name": "Seinajoki UAS Home Page",
+                "value": "https://www.seamk.fi/en"
+            }
+        ]
+    }
+}
